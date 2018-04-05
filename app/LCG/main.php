@@ -22,3 +22,4 @@ echo PHP_EOL;
 echo 'Original message: ' . implode('', $originalArr) . PHP_EOL;
 echo 'Encoded message: ' . implode('', $encodedArr) . PHP_EOL;
 echo 'Decoded message: ' . implode('', $resultArr) . PHP_EOL;
+echo PHP_EOL;

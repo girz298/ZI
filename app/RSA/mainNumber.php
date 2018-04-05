@@ -17,7 +17,7 @@ while(gmp_gcd($eValue,$eilerFunc) != 1)
 
 $dValue = calculateDValue($eValue, $eilerFunc);
 
-
+echo PHP_EOL;
 
 echo 'Open Key: {' . $eValue . ', ' . $nValue . '}' . PHP_EOL;
 echo 'Private Key: {' . $dValue . ', ' . $nValue . '}' . PHP_EOL;
@@ -31,10 +31,4 @@ echo 'Original Message: ' . MESSAGE . PHP_EOL;
 echo 'Encrypted message: ' . $encryptedMessage . PHP_EOL;
 echo 'Decrypted message: ' . $decryptedMessage . PHP_EOL;
 
-if(MESSAGE === (int)$decryptedMessage)
-{
-	echo PHP_EOL;
-	echo 'GREAT WORK';
-	echo PHP_EOL;
-}
-
+echo PHP_EOL;
