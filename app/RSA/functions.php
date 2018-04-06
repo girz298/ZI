@@ -3,7 +3,7 @@
 function calculateDValue($eValue, $eilerFunc)
 {
 	$i = 0;
-	while($i < $eilerFunc){
+	while(true){
 //		$result = bcmod(bcmul($i,$eValue), $eilerFunc);
 		$result =  ($i*$eValue)%$eilerFunc;
 		if($result == 1 && $i != $eValue)
