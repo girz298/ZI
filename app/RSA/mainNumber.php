@@ -12,7 +12,7 @@ $eValue = 0;
 
 while(gmp_gcd($eValue,$eilerFunc) != 1)
 {
-	$eValue = mt_rand(1, $eilerFunc);
+	$eValue = mt_rand(2, $eilerFunc);
 }
 
 $dValue = calculateDValue($eValue, $eilerFunc);

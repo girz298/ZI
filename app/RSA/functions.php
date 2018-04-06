@@ -1,11 +1,12 @@
 <?php
 
-function calculateDValue($randValue, $eilerFunc)
+function calculateDValue($eValue, $eilerFunc)
 {
 	$i = 0;
-	while(true){
-		$result = ($i*$randValue)%$eilerFunc;
-		if($result === 1)
+	while($i < $eilerFunc){
+//		$result = bcmod(bcmul($i,$eValue), $eilerFunc);
+		$result =  ($i*$eValue)%$eilerFunc;
+		if($result == 1 && $i != $eValue)
 		{
 			return $i;
 		}
