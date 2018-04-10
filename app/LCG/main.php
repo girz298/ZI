@@ -13,6 +13,8 @@ for ($charIdx = 0; $charIdx < M_LENGTH; $charIdx++){
     $encodedArr[] = (int)gmp_xor(ord(SURNAME_4_LETTERS[$charIdx]), $generator->getValue());
 }
 
+$generator = new NumbersGenerator(A_VALUE, C_VALUE, M_LENGTH, T0_VALUE);
+
 for ($charIdx = 0; $charIdx < M_LENGTH; $charIdx++){
     $resultArr[] = chr((int)gmp_xor($encodedArr[$charIdx], $generator->getValue()));
     $encodedArr[$charIdx] = chr($encodedArr[$charIdx]);

@@ -8,6 +8,11 @@ $messageAncii = convertStringToANCIIArr(MESSAGE);
 
 $eilerFunc = (P_VALUE-1)*(Q_VALUE-1);
 
+if(P_VALUE === Q_VALUE)
+{
+	$eilerFunc = P_VALUE*(P_VALUE-1);
+}
+
 $eValue = 0;
 
 while(gmp_gcd($eValue,$eilerFunc) != 1)

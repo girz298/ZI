@@ -25,7 +25,7 @@ class NumbersGenerator
     public function getValue()
     {
         if (isset($this->nextValue)){
-            $this->nextValue = bcmod(bcadd(bcmul($this->aValue, $this->nextValue), $this->cValue), $this->mValue);
+            $this->nextValue = bcmod(bcadd(bcmul($this->aValue, $this->nextValue), $this->cValue), bcpow(2, $this->mValue));
         } else {
             $this->nextValue = $this->startValue;
         }
